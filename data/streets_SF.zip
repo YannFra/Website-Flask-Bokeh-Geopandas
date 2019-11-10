@@ -1,0 +1,2092 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="ie ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <!--[if lte ie 8]><script type="text/javascript" src="/fanstatic/vendor/:version:2019-10-25T00:40:03.85/html5.min.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2019-10-25T00:40:03.85/select2/select2.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/css/:version:2019-10-25T00:40:02.70/main.min.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2019-10-25T00:40:03.85/font-awesome/css/font-awesome.min.css" />
+<!--[if ie 7]><link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2019-10-25T00:40:03.85/font-awesome/css/font-awesome-ie7.min.css" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="/fanstatic/ckanext-harvest/:version:2019-10-25T00:40:15.43/styles/harvest.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/ckanext-spatial/:version:2019-10-25T00:40:20.91/js/vendor/leaflet/leaflet.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/ckanext-spatial/:version:2019-10-25T00:40:20.91/css/dataset_map.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/datagovtheme/:version:2019-10-25T00:40:08.19/styles/datagovtheme.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/extlink/:version:2019-10-25T00:40:09.59/extlink.css" />
+
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"2e87881546",applicationID:"318019911"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"2e87881546","agent":"","transactionName":"M1ABNkAAD0ACUxFfWgoaJRdcAhVaDF5KVV4FW00BXQ8VQQxcCVNHFxsTA1EKAFQGCjVXVg9UBAdxDg9HEV8JWlAWGxEHUwU=","applicationID":"318019911","errorBeacon":"bam.nr-data.net","applicationTime":206}</script>
+      <meta name="generator" content="ckan 2.3" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIGER/Line Shapefile, 2017,  county, San Francisco County, CA, All Roads County-based Shapefile - Data.gov</title>
+
+    
+    
+  <link rel="shortcut icon" href="/fanstatic/datagovtheme/images/favicon.ico" />
+    
+  
+    
+<!-- Snippet snippets/googleanalyticsbasic_header.html start -->
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga_trackers = [];
+
+ga('create', 'UA-42145528-2', 'auto', 'tracker1');
+ga('tracker1.set', 'anonymizeIp', true);
+ga('tracker1.send', 'pageview');
+ga_trackers.push('tracker1');
+
+ga('create', 'UA-17367410-17', 'auto', 'tracker2');
+ga('tracker2.set', 'anonymizeIp', true);
+ga('tracker2.send', 'pageview');
+ga_trackers.push('tracker2');
+
+</script>
+<!-- End Google Analytics -->
+
+
+<!-- Digital Analytics Program roll-up, see https://analytics.usa.gov for data -->
+
+<!-- federated_analytics start -->
+<script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=GSA"></script>
+<!-- federated_analytics end -->
+<!-- Snippet snippets/googleanalyticsbasic_header.html end -->
+
+  
+
+<link rel="alternate" type="application/rdf+xml" href="https://catalog.data.gov/dataset/8c835cee-7a28-40eb-ace3-2fc36383cf79.rdf"/>
+
+  
+  
+  
+      
+    
+  
+
+  
+
+  
+
+
+    
+      
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    
+  </head>
+
+  
+  <body data-site-root="https://catalog.data.gov/" data-locale-root="https://catalog.data.gov/" >
+
+    
+    <div class="hide"><a href="#content">Skip to content</a></div>
+  
+
+  
+    
+
+<a href="#content" class="hide">Skip to content</a>
+
+<header class="navbar navbar-static-top masthead">
+    
+
+    <div class="container">
+        <div class="searchbox-row skip-navigation">
+            <div class="skip-link">
+                <a href="#">Jump to Content</a>
+            </div>
+            <div>
+                <form action="/dataset" class="search-form form-inline navbar-right navbar-nav  col-sm-6 col-md-6 col-lg-6" method="get" role="search">
+                    <div class="input-group">
+                        <label class="hide" for="search-header">Search for:</label>
+
+                        <input type="search" placeholder="Search Data.Gov" class="search-field form-control" name="q" value="Search Data.Gov" id="search-header" onblur="if(value=='') value = 'Search Data.Gov'" onfocus="if(value=='Search Data.Gov') value = ''">      <span class="input-group-btn">
+      <button class="search-submit btn_new btn-default" type="submit">
+          <i class="fa fa-search"></i>
+          <span class="sr-only">Search</span>
+      </button>
+    </span>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <hgroup class="top">
+
+            
+            <div class="account-wrapper">
+                
+            </div>
+            
+
+
+        </hgroup>
+        <hgroup class="top-nav">
+            <div class="logo">
+                <a href="http://www.data.gov/" class="root"><span>data.gov</span></a>
+            </div>
+
+            
+<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-primary">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+</button>
+<div class="nav-primary nav-collapse collapse">
+    <nav class="primary">
+    <ul class="nav navbar-nav navbar-right" id="menu-primary-navigation">
+      
+        
+          <li class="active"><a href="/dataset">Data</a></li>
+        
+      
+        
+          <li class="dropdown yamm-fw menu-topics"><a class="dropdown-toggle" data-toggle="dropdown">Topics<b class="caret"></b></a>
+            <ul class="dropdown-menu topics">
+              
+                <li class="menu-agriculture"><a href="//www.data.gov/food/"><i></i><span>Agriculture</span></a></li>
+              
+                <li class="menu-climate"><a href="//www.data.gov/climate/"><i></i><span>Climate</span></a></li>
+              
+                <li class="menu-consumer"><a href="//www.data.gov/consumer/"><i></i><span>Consumer</span></a></li>
+              
+                <li class="menu-ecosystems"><a href="//www.data.gov/ecosystems/"><i></i><span>Ecosystems</span></a></li>
+              
+                <li class="menu-education"><a href="//www.data.gov/education/"><i></i><span>Education</span></a></li>
+              
+                <li class="menu-energy"><a href="//www.data.gov/energy/"><i></i><span>Energy</span></a></li>
+              
+                <li class="menu-finance"><a href="//www.data.gov/finance/"><i></i><span>Finance</span></a></li>
+              
+                <li class="menu-health"><a href="//www.data.gov/health/"><i></i><span>Health</span></a></li>
+              
+                <li class="menu-local-government"><a href="//www.data.gov/local/"><i></i><span>Local Government</span></a></li>
+              
+                <li class="menu-manufacturing"><a href="//www.data.gov/manufacturing/"><i></i><span>Manufacturing</span></a></li>
+              
+                <li class="menu-maritime"><a href="//www.data.gov/maritime/"><i></i><span>Maritime</span></a></li>
+              
+                <li class="menu-ocean"><a href="//www.data.gov/ocean/"><i></i><span>Ocean</span></a></li>
+              
+                <li class="menu-public-safety"><a href="//www.data.gov/safety/"><i></i><span>Public Safety</span></a></li>
+              
+                <li class="menu-science-research"><a href="//www.data.gov/research/"><i></i><span>Science &amp; Research</span></a></li>
+              
+            </ul>
+          <li>
+        
+      
+        
+          <li><a href="//www.data.gov/impact/">Impact</a></li>
+        
+      
+        
+          <li><a href="//www.data.gov/applications">Applications</a></li>
+        
+      
+        
+          <li><a href="//www.data.gov/developers/">Developers</a></li>
+        
+      
+        
+          <li><a href="//www.data.gov/contact">Contact</a></li>
+        
+      
+    </ul>
+    </nav>
+</div>
+            
+
+            
+
+        </hgroup>
+    </div>
+    <div class="header_new banner_new page-heading_new">
+        <div class="container">
+            <div class="page-header_new">
+                <div class="main-heading">
+                    <h1>
+                    
+                        <span class="category-header "><a href="#" class="topic_url"><div><i></i></div><span class="topic_name"></span></a></span>
+                    
+                        Data Catalog
+                    </h1>
+                </div>
+
+                <div class="toolbar">
+                    <div class="add_action">
+                        <a href="/organization" class="btn btn_new">Organizations</a>
+                        <a href="http://www.data.gov/catalog-help/" class="btn btn-primary question"><i class="icon-question-sign"></i></a>
+                    </div>
+                    
+                    <ol class="breadcrumb">
+                        <li class="home"><a href="/dataset"><i class="icon-home"></i><span> Home</span></a></li>
+                        <li class="active"><a href="/dataset">Datasets</a></li>
+                    </ol>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    
+
+  
+    <div role="main" class="controller-package action-read">
+      <div id="content" class="container">
+        
+          
+  
+  
+
+
+          
+            <div class="toolbar">
+              
+                
+                  <ol class="breadcrumb">
+                    
+<!-- Snippet snippets/home_breadcrumb_item.html start -->
+
+<li class="home"><a href="/dataset"><i class="icon-home"></i><span> Home</span></a></li>
+<!-- Snippet snippets/home_breadcrumb_item.html end -->
+
+                    
+  
+    
+    
+      
+      
+<!-- Snippet package/snippets/organization_breadcrumb_item.html start -->
+<li><a href="/organization"><img style="height:18px; margin-top:-5px;" src="/fanstatic/datagovtheme/images/icon-publisher.png"></a></li>
+<!-- Snippet package/snippets/organization_breadcrumb_item.html end -->
+
+      <li><a href="/organization/census-gov">US Census Bureau, Department ...</a></li>
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+	     
+	  
+    
+  
+
+                  </ol>
+                
+              
+            </div>
+          
+
+          <div class="row wrapper">
+
+            
+            
+            
+
+            
+              <div class="primary span9">
+                
+                
+
+
+<div class="btn-group actions">
+    <li> <a href="https://www.data.gov/story/?media_url=https://catalog.data.gov/dataset/tiger-line-shapefile-2017-county-san-francisco-county-ca-all-roads-county-based-shapefile" class="btn btn-info"> <i class="icon-book"></i> Submit Data Story </a> </li>
+    <li> <a href="https://www.data.gov/issue/?media_url=https://catalog.data.gov/dataset/tiger-line-shapefile-2017-county-san-francisco-county-ca-all-roads-county-based-shapefile" class="btn btn-warning"> <i class="icon-bullhorn"></i> Report Data Issue </a> </li>
+    
+    
+    
+    <li></li>
+</div>
+
+
+
+
+<article itemscope itemtype="http://schema.org/Dataset" class="module prose">
+
+    
+    
+    
+
+    
+  
+  
+<section class="module-content" style="padding-top:0px;">
+    
+    <h1 itemprop="name" style="margin-bottom:5px;">
+        
+	TIGER/Line Shapefile, 2017,  county, San Francisco County, CA, All Roads County-based Shapefile
+        
+        
+    </h1>
+
+    
+    <div style="display:inline;">
+       <i class="icon-calendar" style="color:#949494;"></i><span style="font-weight:bold;color:#6e6e6e;margin-left:8px;">Metadata Updated:</span> <span itemprop="dateModified" style="color:#7d7d7d;"><a href="#sec-dates">August 1, 2019</a></span>
+    <br clear="all" />
+    	
+    </div>
+    
+    <br clear="all" />
+		
+	
+    
+      
+        <div itemprop="description" class="notes embedded-content">
+          <p>The TIGER/Line shapefiles and related database files (.dbf) are an extract of selected geographic and cartographic information from the U.S. Census Bureau's Master Address File / Topologically Integrated Geographic Encoding and Referencing (MAF/TIGER) Database (MTDB).  The MTDB represents a seamless national file with no overlaps or gaps between parts, however, each TIGER/Line shapefile is designed to stand alone as an independent data set, or they can be combined to cover the entire nation.
+</p>
+<p>The All Roads Shapefile includes all features within the MTDB Super Class "Road/Path Features" distinguished where the MAF/TIGER Feature Classification Code (MTFCC) for the feature in MTDB that begins with "S".  This includes all primary, secondary, local neighborhood, and rural roads, city streets, vehicular trails (4wd), ramps, service drives, alleys, parking lot roads, private roads for service vehicles (logging, oil fields, ranches, etc.), bike paths or trails, bridle/horse paths, walkways/pedestrian trails, and stairways.
+</p>
+        </div>
+      
+    
+    
+    <span class="insert-comment-thread"></span>
+</section>
+
+
+  
+<section class="information module-content" id="access-use">
+  <h3>Access &amp; Use Information</h3>
+  <div class="access-use-main">
+  
+  
+  
+  <span>
+    <i class="fa fa-file-text-o"></i>
+    <strong>License:</strong>
+      
+        <a href="http://www.usa.gov/publicdomain/label/1.0/" rel="dc:rights">U.S. Government Work</a>
+      
+  </span>
+  
+  </div>
+  <div class="access-use-rights">
+    
+  </div>
+</section>
+
+  
+
+
+
+<section class="module-content">
+    <h3>Collection</h3>
+    <p>This dataset is part of the following collection:</p>
+    <ul class="dataset-list unstyled">
+        
+<!-- Snippet snippets/package_item.html start -->
+
+
+
+
+
+
+
+
+<li class="dataset-item has-organization">
+  
+    <div class="dataset-content">
+      
+      
+      <h3 class="dataset-heading">
+        
+
+        
+            <span class="dataset-collection label">
+                <i class="icon-collection"></i>
+                Collection
+            </span>
+        
+
+        <a href="/dataset/series-information-file-for-the-2017-tiger-line-shapefile-all-roads-county-based-shapefile">Series Information File for the  2017 TIGER/Line Shapefile,  All Roads County-based Shapefile</a>
+        
+        
+<!-- Snippet snippets/popular.html start -->
+
+
+<!-- Snippet snippets/popular.html end -->
+
+      </h3>
+      <div class="notes">
+        
+        
+          <div>The TIGER/Line shapefiles and related database files (.dbf) are an...</div>
+        
+      </div>
+      
+        <ul class="dataset-resources unstyled">
+          
+            
+            
+            
+            
+              
+              <li>
+                <a href="https://www2.census.gov/geo/tiger/TIGER2017//ROADS" class="label" data-format="html"  target="_blank"
+                   data-organization="US Census Bureau, Department of Commerce">HTML</a>
+              </li>
+            
+          
+            
+            
+            
+            
+              
+              <li>
+                <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html" class="label" data-format="html"  target="_blank"
+                   data-organization="US Census Bureau, Department of Commerce">HTML</a>
+              </li>
+            
+          
+            
+            
+            
+            
+              
+              <li>
+                <a href="/dataset/series-information-file-for-the-2017-tiger-line-shapefile-all-roads-county-based-shapefile/resource/3d21c282-5206-4ec8-9bbb-9d1c50d4ce45" class="label" data-format="wms" 
+                   data-organization="US Census Bureau, Department of Commerce">WMS</a>
+              </li>
+            
+          
+            
+            
+            
+            
+              
+              <li>
+                <a href="https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer" class="label" data-format="esri rest"  target="_blank"
+                   data-organization="US Census Bureau, Department of Commerce">Esri REST</a>
+              </li>
+            
+          
+            
+            
+            
+            
+              
+              <li>
+                <a href="https://meta.geo.census.gov/data/existing/decennial/GEO/GPMB/TIGERline/TIGER2017/roads/tl_2017_roads.shp.ea.iso.xml" class="label" data-format="xml" 
+                   data-organization="US Census Bureau, Department of Commerce">XML</a>
+              </li>
+            
+          
+        </ul>
+      
+    </div>
+  
+</li>
+<!-- Snippet snippets/package_item.html end -->
+
+    </ul>
+</section>
+
+
+
+  
+    
+<!-- Snippet package/snippets/resources_list.html start -->
+
+
+
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+
+
+  <section id="dataset-resources" class="resources module-content">
+    <h3>Downloads &amp; Resources</h3>
+    
+    <ul class="resource-list">
+      
+
+      <!-- non-public display new message, else if no resources display old msg, and then resources
+          at the end display the extra item, maybe a landing pg        -->
+
+      <br/>
+      <!-- display new msg for all non-public datasets -->
+      
+        
+          
+            
+<!-- Snippet package/snippets/resource_item.html start -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload" class="resource-item" title="ZIP files may contain data and documentation in one or more formats. In Data.gov’s Geospatial catalog, most of the files are multi-part shapefiles.">
+
+  
+    <a itemprop="contentUrl" class="heading" href="/dataset/tiger-line-shapefile-2017-county-san-francisco-county-ca-all-roads-county-based-shapefile/resource/1ab2ce4e-c39d-464d-a08d-b9cdd7b6f5f1" title="Shapefile Zip File">
+    Shapefile Zip File<span class="format-label" property="dc:format" data-format="zip">ZIP</span>
+    
+<!-- Snippet snippets/popular.html start -->
+
+
+<!-- Snippet snippets/popular.html end -->
+
+    </a>
+  
+
+
+<p itemprop="description" class="description">
+    
+    tl_2017_06075_roads.zip
+
+    
+	
+</p>
+
+
+
+&nbsp; &nbsp;
+
+
+
+
+
+<div class="btn-group">
+
+
+	<a href="https://www2.census.gov/geo/tiger/TIGER2017//ROADS/tl_2017_06075_roads.zip" class="btn btn-primary"
+	   data-format="zip" data-organization="US Census Bureau, Department of Commerce"
+	> <i class="icon-download-alt"></i> Download </a>
+
+</div>
+
+</li>
+<!-- Snippet package/snippets/resource_item.html end -->
+
+          
+        
+          
+            
+<!-- Snippet package/snippets/resource_item.html start -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload" class="resource-item">
+
+  
+    <a itemprop="contentUrl" class="heading" href="/dataset/tiger-line-shapefile-2017-county-san-francisco-county-ca-all-roads-county-based-shapefile/resource/f1db3b4c-b676-4e54-9b5d-1da4538227e2" title="TIGER/Line® Shapefiles">
+    TIGER/Line® Shapefiles<span class="format-label" property="dc:format" data-format="html">HTML</span>
+    
+<!-- Snippet snippets/popular.html start -->
+
+<span class="recent-views" title="19 views" xmlns="http://www.w3.org/1999/xhtml">
+  <i class="fa fa-line-chart"></i> 19 views
+</span>
+
+
+<!-- Snippet snippets/popular.html end -->
+
+    </a>
+  
+
+
+<p itemprop="description" class="description">
+    
+    Should be used for most mapping projects--this is our most comprehensive...
+    
+	
+</p>
+
+
+
+&nbsp; &nbsp;
+
+
+
+
+
+<div class="btn-group">
+
+
+	
+	<a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html" class="btn btn-primary" target="_blank"> <i class="icon-external-link"></i> Visit page </a>
+
+
+</div>
+
+</li>
+<!-- Snippet package/snippets/resource_item.html end -->
+
+          
+        
+          
+            
+<!-- Snippet package/snippets/resource_item.html start -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload" class="resource-item">
+
+  
+    <a itemprop="contentUrl" class="heading" href="/dataset/tiger-line-shapefile-2017-county-san-francisco-county-ca-all-roads-county-based-shapefile/resource/21ba89d0-b377-4ca1-a6a2-c4e40d179442" title="TIGERweb/tigerWMS_PhysicalFeatures (MapServer)">
+    TIGERweb/tigerWMS_PhysicalFeatures (MapServer)<span class="format-label" property="dc:format" data-format="wms">WMS</span>
+    
+<!-- Snippet snippets/popular.html start -->
+
+
+<!-- Snippet snippets/popular.html end -->
+
+    </a>
+  
+
+
+<p itemprop="description" class="description">
+    
+    This web mapping service contains the layer for primary and secondary roads....
+    
+	
+</p>
+
+
+
+&nbsp; &nbsp;
+
+
+
+
+
+<div class="btn-group">
+
+
+	<button class="btn btn-primary" data-toggle="dropdown" style="border-top-right-radius:0;border-bottom-right-radius:0">Open With</button>
+	<button class="btn btn-primary" data-toggle="dropdown" style="margin-left:0px;margin-right:10px;border-top-left-radius:0;border-bottom-left-radius:0">
+	<span class="caret" style="margin-top:0px;"></span><span class="sr-only">Toggle dropdown</span>
+	</button>
+	<ul class="dropdown-menu">
+	  <li class="datagov_viewer"><a href="/dataset/tiger-line-shapefile-2017-county-san-francisco-county-ca-all-roads-county-based-shapefile/resource/21ba89d0-b377-4ca1-a6a2-c4e40d179442"><i></i><span>Data.gov Map Preview</span></a></li>
+	  
+	  
+	  
+	  <li class="arcgis"><a href="http://www.arcgis.com/home/webmap/viewer.html?None=https://tigerweb.geo.census.gov/arcgis/services/TIGERweb/tigerWMS_PhysicalFeatures/MapServer/WMSServer"><span>ArcGIS</span></a></li>
+	  	  
+	</ul>
+	<a href="/dataset/tiger-line-shapefile-2017-county-san-francisco-county-ca-all-roads-county-based-shapefile/resource/21ba89d0-b377-4ca1-a6a2-c4e40d179442" class="btn btn-primary" style="border-radius:4px;"> <i class="icon-globe"></i> View Map </a>
+
+
+</div>
+
+</li>
+<!-- Snippet package/snippets/resource_item.html end -->
+
+          
+        
+          
+            
+<!-- Snippet package/snippets/resource_item.html start -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li itemprop="distribution" itemscope itemtype="http://schema.org/DataDownload" class="resource-item">
+
+  
+    <a itemprop="contentUrl" class="heading" href="/dataset/tiger-line-shapefile-2017-county-san-francisco-county-ca-all-roads-county-based-shapefile/resource/318524b5-5ddd-46c6-af6d-a40a83017ce5" title="TIGERweb/tigerWMS_PhysicalFeatures (MapServer) Rest Service">
+    TIGERweb/tigerWMS_PhysicalFeatures (MapServer) ...<span class="format-label" property="dc:format" data-format="esri rest">Esri REST</span>
+    
+<!-- Snippet snippets/popular.html start -->
+
+<span class="recent-views" title="71 views" xmlns="http://www.w3.org/1999/xhtml">
+  <i class="fa fa-line-chart"></i> 71 views
+</span>
+
+
+<!-- Snippet snippets/popular.html end -->
+
+    </a>
+  
+
+
+<p itemprop="description" class="description">
+    
+    This Rest Service contains all the Transportation and hydrology layers
+
+    
+	
+</p>
+
+
+
+&nbsp; &nbsp;
+
+
+
+
+
+<div class="btn-group">
+
+
+	
+		<button class="btn btn-primary" data-toggle="dropdown" style="border-top-right-radius:0;border-bottom-right-radius:0">Open With</button>
+		<button class="btn btn-primary" data-toggle="dropdown" style="margin-left:0px;margin-right:10px;border-top-left-radius:0;border-bottom-left-radius:0">
+		<span class="caret" style="margin-top:0px;"></span><span class="sr-only">Toggle dropdown</span>
+		</button>
+		<ul class="dropdown-menu">
+		  <li class="arcgis"><a href="http://www.arcgis.com/home/webmap/viewer.html?url=https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"><span>ArcGIS</span></a></li>
+		</ul>
+	
+	<a href="https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer" class="btn btn-primary" target="_blank"> <i class="icon-external-link"></i> Visit page </a>
+
+
+</div>
+
+</li>
+<!-- Snippet package/snippets/resource_item.html end -->
+
+          
+        
+      
+      <br/>
+      
+<!-- Snippet package/snippets/resource_extra_item.html start -->
+
+
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+   
+
+
+<!-- Snippet package/snippets/resource_extra_item.html end -->
+
+
+
+      
+    </ul>
+     </section>
+<!-- for datasets that dont have resources or a landing page.. -->
+
+<!-- Snippet package/snippets/resources_list.html end -->
+
+  
+
+  
+
+  <section class="module-content">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  </section>
+
+
+  <section class="module-content" id="sec-dates">
+      <h3>Dates</h3>
+      <table class="table table-striped table-bordered table-condensed">
+          <tbody>
+            
+            <tr>
+              <th scope="row" class="dataset-label">Metadata Date</th>
+              <td><span property="dct:issued">August 1, 2019</span></td>
+            </tr>
+            
+            <tr>
+              <th scope="row" class="dataset-label">Metadata Created Date</th>
+              <td>December 20, 2017</td>
+            </tr>
+            <tr>
+              <th scope="row" class="dataset-label">Metadata Updated Date</th>
+              <td><span property="dct:modified">August 1, 2019</span></td>
+            </tr>
+            
+            <tr>
+                <th scope="row" class="dataset-label">Reference Date(s)</th>
+                <td>2017 (publication)</td>
+            </tr>
+            
+
+            
+              
+            
+
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+                <tr>
+                  <th scope="row" class="dataset-label" property="rdfs:label">Frequency Of Update</th>
+                  <td class="dataset-details" property="rdf:value">
+                    
+                      notPlanned
+                    
+                  </td>
+                </tr>
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+              
+              
+              
+              
+            
+          </tbody>
+      </table>
+  </section>
+
+  
+  
+    
+    
+      <section id="dataset-metadata-source" class="resources module-content">
+        <h3>Metadata Source</h3>
+        <ul class="resource-list">
+          <li class="resource-item">
+            <strong class="heading">
+            
+              <span class="format-label" property="dc:format" data-format="ISO-19139">ISO-19139</span>
+              ISO-19139 Metadata
+            
+            </strong>
+            <p class="description">
+              <a href="/harvest/object/95f15f84-8a44-47db-a5cc-668ba47aa305">Download Metadata</a>
+              
+                
+                  &middot;
+                  <a href="/harvest/object/95f15f84-8a44-47db-a5cc-668ba47aa305/html">View Full Metadata</a>
+                
+              
+            </p>
+          </li>
+          
+        </ul>
+        <p class="muted">Harvested from <a href="/harvest/b49c3d60-ed69-4df8-8831-5475a4c8a67a">2017_roads</a></p>
+      </section>
+    
+  
+
+  
+  
+
+
+
+  
+    
+<!-- Snippet package/snippets/tags.html start -->
+
+  <section class="tags">
+    
+<!-- Snippet snippets/tag_list.html start -->
+
+
+
+  <ul class="tag-list well">
+    
+      <li itemprop="keywords">
+        <a itemscope itemtype="http://schema.org/Text" class="tag" href="/dataset?tags=06075">06075</a>
+      </li>
+    
+      <li itemprop="keywords">
+        <a itemscope itemtype="http://schema.org/Text" class="tag" href="/dataset?tags=county+or+equivalent+entity">county or equivalen...</a>
+      </li>
+    
+      <li itemprop="keywords">
+        <a itemscope itemtype="http://schema.org/Text" class="tag" href="/dataset?tags=address+range">address range</a>
+      </li>
+    
+      <li itemprop="keywords">
+        <a itemscope itemtype="http://schema.org/Text" class="tag" href="/dataset?tags=linear+feature">linear feature</a>
+      </li>
+    
+      <li itemprop="keywords">
+        <a itemscope itemtype="http://schema.org/Text" class="tag" href="/dataset?tags=united+states">united states</a>
+      </li>
+    
+      <li itemprop="keywords">
+        <a itemscope itemtype="http://schema.org/Text" class="tag" href="/dataset?tags=roads">roads</a>
+      </li>
+    
+      <li itemprop="keywords">
+        <a itemscope itemtype="http://schema.org/Text" class="tag" href="/dataset?tags=road+feature">road feature</a>
+      </li>
+    
+      <li itemprop="keywords">
+        <a itemscope itemtype="http://schema.org/Text" class="tag" href="/dataset?tags=san+francisco">san francisco</a>
+      </li>
+    
+      <li itemprop="keywords">
+        <a itemscope itemtype="http://schema.org/Text" class="tag" href="/dataset?tags=street+centerline">street centerline</a>
+      </li>
+    
+      <li itemprop="keywords">
+        <a itemscope itemtype="http://schema.org/Text" class="tag" href="/dataset?tags=u.s.">u.s.</a>
+      </li>
+    
+  </ul>
+
+<!-- Snippet snippets/tag_list.html end -->
+
+  </section>
+
+<!-- Snippet package/snippets/tags.html end -->
+
+  
+
+  
+  <section class="module-content additional-info">
+     <h3>Additional Metadata</h3>
+    <table class="table table-striped table-bordered table-condensed" data-module="table-toggle-more">
+      <tbody>
+        
+        <tr>
+          <th scope="row" class="dataset-label">Resource Type</th>
+          <td>Dataset</td>
+        </tr>
+        
+        <tr>
+          <th scope="row" class="dataset-label">Metadata Date</th>
+          <td><span property="dct:issued">August 1, 2019</span></td>
+        </tr>
+        
+		<tr>
+          <th scope="row" class="dataset-label">Metadata Created Date</th>
+          <td>December 20, 2017</td>
+        </tr>
+		<tr>
+          <th scope="row" class="dataset-label">Metadata Updated Date</th>
+          <td><span property="dct:modified">August 1, 2019</span></td>
+        </tr>		
+        
+          
+          <tr>
+            <th scope="row" class="dataset-label">Reference Date(s)</th>
+            <td>2017 (publication)</td>
+          </tr>
+          <tr itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+            <th scope="row" class="dataset-label">Responsible Party</th>
+            <td><span itemprop="name" property="dct:publisher">Unknown</span></td>
+          </tr>
+          <tr>
+            <th scope="row" class="dataset-label">Contact Email</th>
+            <td><div typeof="foaf:Person">
+              <span property="foaf:mbox">
+             
+             
+              <a href="mailto:"></a>	
+             
+             </span></div>
+            </td>
+          </tr>
+        
+
+        
+        
+        
+          
+            
+            
+           
+           
+            
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Access Constraints</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     Access Constraints: None, Use Constraints:The TIGER/Line Shapefile products are not copyrighted however TIGER/Line and Census TIGER are registered trademarks of the U.S. Census Bureau.  These products are free to use in a product or publication, however acknowledgement must be given to the U.S. Census Bureau as the source.
+The horizontal spatial accuracy information present in these files is provided for the purposes of statistical analysis and census operations only.  No warranty, expressed or implied is made with regard to the accuracy of the spatial accuracy, and no liability is assumed by the U.S. Government in general or the U.S. Census Bureau, specifically as to the spatial or attribute accuracy of the data.  The TIGER/Line Shapefiles may not be suitable for high-precision measurement applications such as engineering problems, property transfers, or other uses that might require highly accurate measurements of the earth&#39;s surface.Coordinates in the TIGER/Line shapefiles have six implied decimal places, but the positional accuracy of these coordinates is not as great as the six decimal places suggest.
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Bbox East Long</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     -122.28178
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Bbox North Lat</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     37.929824
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Bbox South Lat</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     37.63983
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Bbox West Long</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     -123.173825
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Collection Package Id</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     22f265bb-dac3-4ca7-bdb1-b59a3f1359b9
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Coupled Resource</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Frequency Of Update</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     notPlanned
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Guid</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     tl_2017_06075_roads.shp.iso.xml
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Harvest Object Id</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     95f15f84-8a44-47db-a5cc-668ba47aa305
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Harvest Source Id</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     b49c3d60-ed69-4df8-8831-5475a4c8a67a
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Harvest Source Title</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     2017_roads
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+            
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Licence</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Metadata Language</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Metadata Type</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     geospatial
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Progress</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     completed
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Spatial Data Service Type</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Spatial Reference System</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Spatial Harvester</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     True
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Temporal Extent Begin</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     2016-06
+                
+              </td>
+            </tr>
+            
+           
+          
+          
+            
+            
+           
+           
+           
+            <tr rel="dc:relation" resource="_:extra" class="toggle-more">
+              <th scope="row" class="dataset-label" property="rdfs:label">Temporal Extent End</th>
+                
+                <td class="dataset-details" property="rdf:value">
+                
+
+                
+                     2017-05
+                
+              </td>
+            </tr>
+            
+           
+          
+      </tbody>
+    </table>
+	<p>
+       <small>
+        Didn't find what you're looking for? Suggest a dataset <a href="http://www.data.gov/nominate">here</a>.
+       </small>
+      </p>
+  </section>
+
+
+
+</article>
+
+              </div>
+            
+
+            
+              <aside class="secondary span3">
+                
+                
+  
+
+
+<div class="org_type">
+    
+    
+    
+<!-- Snippet snippets/organization.html start -->
+
+
+
+
+    
+
+
+
+
+  <div class="module context-info">
+
+    <section class="module-content">
+      
+      
+        <span class="organization-type" title="Federal Government" data-organization-type="federal">
+          <span>Federal</span>
+        </span>
+      
+        <div class="image">
+            
+            <a href="/organization/census-gov">
+                <img src="http://www.census.gov/main/img/home/CensusLogo-white.png" width="200" alt="census-gov" />
+            </a>
+            
+        </div>
+        <h1 class="heading">
+            
+                US Census Bureau, Department of Commerce
+            
+        </h1>
+
+        
+            
+                <p>
+                    The Census Bureau's mission is to serve as the leading source of quality data about the nation's people and economy. We honor privacy, protect confidentiality, share our...
+                    <a href="/organization/about/census-gov">read more</a>
+                </p>
+            
+        
+      
+    </section>
+  </div>
+    
+        
+
+<!-- Snippet snippets/organization.html end -->
+
+    
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Snippet snippets/social.html start -->
+
+<section class="module module-narrow social">
+<h2 class="module-heading"><i class="icon-medium icon-share"></i> Share on Social Sites</h2>
+  <ul class="nav nav-simple">
+    <li class="nav-item"><a href="https://plus.google.com/share?url=https://catalog.data.gov/dataset/tiger-line-shapefile-2017-county-san-francisco-county-ca-all-roads-county-based-shapefile" target="_blank"><i class="icon-google-plus-sign"></i> Google+</a></li>
+    <li class="nav-item"><a href="https://twitter.com/share?url=https://catalog.data.gov/dataset/tiger-line-shapefile-2017-county-san-francisco-county-ca-all-roads-county-based-shapefile" target="_blank"><i class="icon-twitter-sign"></i> Twitter</a></li>
+    <li class="nav-item"><a href="https://www.facebook.com/sharer.php?u=https://catalog.data.gov/dataset/tiger-line-shapefile-2017-county-san-francisco-county-ca-all-roads-county-based-shapefile" target="_blank"><i class="icon-facebook-sign"></i> Facebook</a></li>
+  </ul>
+</section>
+<!-- Snippet snippets/social.html end -->
+
+
+
+
+
+
+
+<div class="terms">
+    
+<!-- Snippet snippets/organization.html start -->
+
+
+
+
+
+
+
+  <div class="module context-info">
+
+    <section class="module-content">
+      
+      
+        <span class="organization-type" title="Federal Government" data-organization-type="federal">
+          <span>Federal</span>
+        </span>
+      
+        <div class="image">
+            
+            <a href="/organization/census-gov">
+                <img src="http://www.census.gov/main/img/home/CensusLogo-white.png" width="200" alt="census-gov" />
+            </a>
+            
+        </div>
+        <h1 class="heading">
+            
+                US Census Bureau, Department of Commerce
+            
+        </h1>
+
+        
+            
+                <p>
+                    The Census Bureau's mission is to serve as the leading source of quality data about the nation's people and economy. We honor privacy, protect confidentiality, share our...
+                    <a href="/organization/about/census-gov">read more</a>
+                </p>
+            
+        
+      
+    </section>
+  </div>
+    
+        
+
+<!-- Snippet snippets/organization.html end -->
+
+</div>
+
+
+  
+  
+    
+<!-- Snippet spatial/snippets/dataset_map_sidebar.html start -->
+
+
+<section class="module module-narrow dataset-map">
+<h2 class="module-heading"><i class="icon-medium icon-globe"></i> Dataset extent</h2>
+  
+<!-- Snippet spatial/snippets/dataset_map_base.html start -->
+
+
+
+<div class="dataset-map" data-module="dataset-map" data-extent="{&#34;type&#34;: &#34;Polygon&#34;, &#34;coordinates&#34;: [[[-123.173825, 37.63983], [-122.28178, 37.63983], [-122.28178, 37.929824], [-123.173825, 37.929824], [-123.173825, 37.63983]]]}" data-module-site_url="&#34;https://catalog.data.gov/&#34;" data-module-map_config="{&#34;type&#34;: &#34;custom&#34;, &#34;custom.url&#34;: &#34;//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&#34;, &#34;attribution&#34;: &#34;Map tiles &amp;amp; Data by &lt;a href=\&#34;http://openstreetmap.org\&#34;&gt;OpenStreetMap&lt;/a&gt;, under &lt;a href=\&#34;https://creativecommons.org/licenses/by-sa/3.0/\&#34;&gt;CC BY SA&lt;/a&gt;.&#34;, &#34;subdomains&#34;: &#34;abc&#34;}">
+  <div id="dataset-map-container"></div>
+  <div id="dataset-map-attribution">
+    
+<!-- Snippet spatial/snippets/map_attribution.html start -->
+
+  Map tiles &amp; Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY SA</a>.
+
+ 
+<!-- Snippet spatial/snippets/map_attribution.html end -->
+
+  </div>
+</div>
+
+
+<!-- Snippet spatial/snippets/dataset_map_base.html end -->
+
+</section>
+<!-- Snippet spatial/snippets/dataset_map_sidebar.html end -->
+
+  
+
+              </aside>
+            
+          </div>
+        
+      </div>
+    </div>
+  
+    <footer class="site-footer">
+  <div class="container">
+    
+
+
+        <div class="fluid-row">
+            <div class="span6 clearfix">
+                <div class="footer-logo"> <a href="http://www.data.gov/" class="logo-brand">Data.Gov 2.0</a> </div>
+                <ul class="nav" id="menu-footer2">
+                    
+<!-- Snippet snippets/footer2_menu.html start -->
+
+
+  <li><a href="//www.data.gov/privacy-policy">Privacy and Website Policies</a></li>
+
+  <li><a href="//www.usa.gov/">USA.GOV</a></li>
+
+  <li><a href="//www.performance.gov/">PERFORMANCE.GOV</a></li>
+
+<!-- Snippet snippets/footer2_menu.html end -->
+
+                </ul>
+            </div>
+            <nav role="navigation" class="span3">
+                <ul class="nav" id="menu-footer">
+                    
+<!-- Snippet snippets/footer_menu.html start -->
+
+
+  <li><a href="//www.data.gov/about">About</a></li>
+
+  <li><a href="//www.data.gov/open-gov/">Open Government</a></li>
+
+  <li><a href="//www.data.gov/meta/">Blog</a></li>
+
+  <li><a href="//www.data.gov/metrics">Metrics</a></li>
+
+  <li><a href="//www.data.gov/events/">Events</a></li>
+
+<!-- Snippet snippets/footer_menu.html end -->
+
+                    
+                    <li><a href="/user/login" class="local-link"> Login </a> </li>
+                    
+                </ul>
+            </nav>
+            <div class="span3 social-nav">
+                <nav role="navigation">
+                    <ul class="nav" id="menu-social_navigation">
+                        <li><a href="https://twitter.com/usdatagov"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
+                        <li><a href="http://github.com/GSA/data.gov/"><i class="fa fa-github"></i><span>Github</span></a></li>
+                    </ul>
+                </nav>
+         </div>
+
+
+     </div>
+
+
+    
+
+
+	
+
+    
+
+    
+  </div>
+
+  
+    
+  
+</footer>
+  
+    
+    
+    
+  
+  
+  
+    
+  <script>
+      var extlink_white_list = '.gov,.mil'.split(',');
+      var extlink_popup_message = 'This link will direct you to an external website that may have different content and privacy policies from Data.gov.';
+  </script>
+  
+
+  
+
+
+  
+      
+  
+  <input type="hidden" data-module="googleanalyticsbasic_events" />
+
+  <script>document.getElementsByTagName('html')[0].className += ' js';</script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2019-10-25T00:40:03.85/jquery.min.js"></script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2019-10-25T00:40:03.85/:bundle:bootstrap/js/bootstrap.min.js;jed.min.js;select2/select2.min.js"></script>
+<script type="text/javascript" src="/fanstatic/base/:version:2019-10-25T00:40:03.15/:bundle:plugins/jquery.inherit.min.js;plugins/jquery.proxy-all.min.js;plugins/jquery.url-helpers.min.js;plugins/jquery.date-helpers.min.js;plugins/jquery.slug.min.js;plugins/jquery.slug-preview.min.js;plugins/jquery.truncator.min.js;plugins/jquery.masonry.min.js;plugins/jquery.form-warning.min.js;sandbox.min.js;module.min.js;pubsub.min.js;client.min.js;notify.min.js;i18n.min.js;main.min.js;modules/select-switch.min.js;modules/slug-preview.min.js;modules/basic-form.min.js;modules/confirm-action.min.js;modules/api-info.min.js;modules/autocomplete.min.js;modules/custom-fields.min.js;modules/related-item.min.js;modules/data-viewer.min.js;modules/table-selectable-rows.min.js;modules/resource-form.min.js;modules/resource-upload-field.min.js;modules/resource-reorder.min.js;modules/resource-view-reorder.min.js;modules/follow.min.js;modules/activity-stream.min.js;modules/dashboard.min.js;modules/resource-view-embed.min.js;view-filters.min.js;modules/resource-view-filters-form.min.js;modules/resource-view-filters.min.js;modules/table-toggle-more.min.js;modules/dataset-visibility.min.js;modules/media-grid.min.js;modules/image-upload.min.js"></script>
+<script type="text/javascript" src="/fanstatic/ckanext-spatial/:version:2019-10-25T00:40:20.91/:bundle:js/vendor/leaflet/leaflet.js;js/common_map.js;js/dataset_map.js"></script>
+<!--[if lte ie 9]><script type="text/javascript" src="/fanstatic/datagovtheme/:version:2019-10-25T00:40:08.19/scripts/vendor/jquery.placeholder.js"></script><![endif]-->
+<script type="text/javascript" src="/fanstatic/datagovtheme/:version:2019-10-25T00:40:08.19/scripts/jquery.cookie.js"></script>
+<script type="text/javascript" src="/fanstatic/datagovtheme/:version:2019-10-25T00:40:08.19/scripts/datagovtheme.js"></script>
+<script type="text/javascript" src="/fanstatic/datagovtheme/:version:2019-10-25T00:40:08.19/:bundle:scripts/tracking.js;scripts/hideMaxListItem.js;scripts/sorting.js"></script>
+<script type="text/javascript" src="/fanstatic/extlink/:version:2019-10-25T00:40:09.59/extlink.js"></script>
+<script type="text/javascript" src="/fanstatic/googleanalyticsbasic/:version:2019-10-25T00:40:14.58/googleanalyticsbasic_events.js"></script></body>
+</html>
