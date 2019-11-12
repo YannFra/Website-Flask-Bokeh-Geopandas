@@ -15,4 +15,4 @@ Our example will be on the bike network in San Francisco. Where are the bike lan
 
 This work was possible thanks to :
 + [DataSF](https://datasf.org) that has a lot of Open Access datasets. We used the one they give on [bike lanes in San Francisco](https://data.sfgov.org/Transportation/SFMTA-Bikeway-Network/ygmz-vaxd).
-+ [Data.gov] that also has a lot of open Access datasets. We used the one they give about the [streets in San Francisco](https://catalog.data.gov/dataset/tiger-line-shapefile-2017-county-san-francisco-county-ca-all-roads-county-based-shapefile)
++ [Data.gov](https://www.data.gov) that also has a lot of open Access datasets. We used the one they give about the [streets in San Francisco](https://catalog.data.gov/dataset/tiger-line-shapefile-2017-county-san-francisco-county-ca-all-roads-county-based-shapefile)
