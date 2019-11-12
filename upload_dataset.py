@@ -11,9 +11,12 @@ from urllib.request import urlretrieve
 url_bike_db="https://data.sfgov.org/api/geospatial/ygmz-vaxd?method=export&format=Shapefile"
 url_street_db="https://catalog.data.gov/dataset/tiger-line-shapefile-2017-county-san-francisco-county-ca-all-roads-county-based-shapefile"
 
-#create the folder where we will save our dataset 
+#create the folder where we will save our dataset and our plots
 data_dir="data"
 try:os.mkdir(data_dir)
+except:pass
+
+try:os.mkdir("templates")
 except:pass
 
 
