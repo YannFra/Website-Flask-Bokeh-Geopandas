@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 from flask import Flask
 
+#Application that is running the website
 app = Flask(__name__)
 
 @app.route("/")
 def index():
     
+    #Downloading the datasets
     import geopandas as gpd
     
     db_bike_path="data/geo_export_0ff3043a-1833-476b-afe0-779dfa091ebd.shp"
@@ -15,7 +17,7 @@ def index():
     db_roads=gpd.read_file(db_roads_path)
     
     
-    #Libraries for Dynamic Vizualisation
+    #Plotting the bike lanes and the streets
     from bokeh.plotting import figure
     from bokeh.models import GeoJSONDataSource
     from bokeh.embed import components
@@ -34,6 +36,8 @@ def index():
     
     SF.legend.click_policy="hide"
     
+    
+    #Convert the plot into HTML and JS that can be read by base.html
     script_plot,div_plot=components(SF ,INLINE)
     
     return render_template('plot.html',
@@ -43,5 +47,6 @@ def index():
                        css_resources=INLINE.render_css())
 
 
+#Make the website work when we run this python file
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8000, debug=True)
