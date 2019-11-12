@@ -18,6 +18,7 @@ except:pass
 
 try:os.mkdir("templates")
 except:pass
+print(data_dir +" and templates directories have been created")
 
 
 #Downlaod the bike zip file available on the website if not already in `data`
