@@ -1,6 +1,6 @@
 # How to plot an interactive plot in a website. All in Python.
 
-You have a dataset. How do you plot this dataset into a website? Well guess what, here again Python can do all of that. From opening the dataset to creating a webpage including the interactive plot you did, there is nothing Python cannot do! 
+You have a dataset. How do you plot this dataset into a website ? Well guess what, here again Python can do all of that. From opening the dataset to creating a webpage including the interactive plot you did, there is nothing Python cannot do! 
 
 This tutorial/example will go through all the steps required to go from the dataset to inserting your dynamic plot in a webpage. We will be plotting the bikeways in San Francisco over the city’s streets. The questions this example answers are:
 1.	How do you open and plot a geospatial database ? We will use GeoPandas to open a shapefile db (.shp).
