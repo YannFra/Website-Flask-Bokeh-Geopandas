@@ -3,9 +3,9 @@
 You have a dataset. How do you plot this dataset into a website? Well guess what, here again Python can do all of that. From opening the dataset to creating a webpage including the interactive plot you did, there is nothing Python cannot do! 
 
 This tutorial/example will go through all the steps required to go from the dataset to inserting your dynamic plot in a webpage. We will be plotting the bikeways in San Francisco over the city’s streets. The questions this example answers are:
-+	How do you open and plot a geospatial database ? We will use GeoPandas to open a shapefile db (.shp).
-+	How do you make this plot interact with the user ? We will use Bokeh to create the interactive plot.
-+	How do you create a webpage including this plot ? We will use Flask to do so. 
+1.	How do you open and plot a geospatial database ? We will use GeoPandas to open a shapefile db (.shp).
+2.	How do you make this plot interact with the user ? We will use Bokeh to create the interactive plot.
+3.	How do you create a webpage including this plot ? We will use Flask to do so. 
 
 A lot of tutorials show how to do each of these parts independently. The goal of this tutorial is to include all of them into one example on the Bike Lanes network in San Francisco. The Python code used can be found in this [GitHub](https://github.com/YannFra/Website-Flask-Bokeh-Geopandas) and the explanations in this [tutorial](https://yannfra.github.io/Creating-Website-Flask-Bokeh-GeoPandas/). Please contact me if you encounter any issue. 
 
